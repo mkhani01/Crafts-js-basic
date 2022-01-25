@@ -51,11 +51,13 @@ export const Toolbox = () => {
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={(ref) =>
+            ref={(ref) =>{
+              console.log(ref)
               connectors.create(
                 ref,
                 <Element canvas is={Container} padding={20} />
               )
+            }
             }
             variant="contained"
             data-cy="toolbox-container"
