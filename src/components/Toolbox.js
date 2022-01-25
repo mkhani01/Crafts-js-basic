@@ -11,7 +11,8 @@ import { Button } from './user/Button';
 import { Card } from './user/Card';
 import { Container } from './user/Container';
 import { Text } from './user/Text';
-import { Pinechart } from './user/Pinechart';
+import { Piechart } from './user/Piechart';
+import {TabBar} from './user/TabBar';
 
 export const Toolbox = () => {
   const { connectors } = useEditor();
@@ -73,11 +74,20 @@ export const Toolbox = () => {
         </Grid>
         <Grid container direction="column" item>
           <MaterialButton
-            ref={(ref) => connectors.create(ref, <Pinechart />)}
+            ref={(ref) => connectors.create(ref, <Piechart />)}
             variant="contained"
             data-cy="toolbox-card"
           >
             Pie Chart
+          </MaterialButton>
+        </Grid>
+        <Grid container direction="column" item>
+          <MaterialButton
+            ref={(ref) => connectors.create(ref, <TabBar />)}
+            variant="contained"
+            data-cy="toolbox-card"
+          >
+            Tab bar
           </MaterialButton>
         </Grid>
       </Grid>

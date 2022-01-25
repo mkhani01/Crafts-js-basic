@@ -5,7 +5,7 @@ import { useNode } from '@craftjs/core';
 
 
 
-export const Pinechart = () => 
+export const Piechart = () => 
 {
     const {
         connectors: { connect, drag },

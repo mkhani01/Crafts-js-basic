@@ -9,7 +9,8 @@ import { Button } from '../components/user/Button';
 import { Card, CardBottom, CardTop } from '../components/user/Card';
 import { Container } from '../components/user/Container';
 import { Text } from '../components/user/Text';
-import { Pinechart } from '../components/user/Pinechart';
+import { Piechart } from '../components/user/Piechart';
+import { TabBar } from '../components/user/TabBar';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -33,7 +34,8 @@ export default function App() {
           Container,
           CardTop,
           CardBottom,
-          Pinechart
+          Piechart,
+          TabBar
         }}
       >
         <Topbar />

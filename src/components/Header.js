@@ -10,7 +10,7 @@ import React from 'react';
 import { Button } from './user/Button';
 import { Card } from './user/Card';
 import { Text } from './user/Text';
-import { Piechart } from './user/Pinechart';
+import { Piechart } from './user/Piechart';
 
 export const Toolbox = () => {
   const { connectors } = useEditor();
